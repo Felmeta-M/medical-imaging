@@ -64,6 +64,9 @@ source venv/bin/activate  # source venv/Scripts/activate (for windows)
 # install dependencies
 pip install -r dev-requirements.txt
 
+# install tensorflow
+pip install tensorflow
+
 # start server
 python app.py
 
