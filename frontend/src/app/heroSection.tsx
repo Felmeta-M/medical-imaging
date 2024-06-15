@@ -6,7 +6,7 @@ type Props = {};
 
 export default function HeroSection({}: Props) {
   const content = {
-    description: "Join us and save lives together",
+    // description: "Join us and save lives together",
     cta_button: "Try Now",
     images: {
       a: "/doctor.jpeg",
@@ -27,7 +27,7 @@ export default function HeroSection({}: Props) {
             </span>
             <span>Care</span>
           </h1>
-          <p className="text-lg text-sky-400">{content?.description} </p>
+          {/* <p className="text-lg text-sky-400">{content?.description} </p> */}
 
           {/* Buttons */}
           <div className="flex flex-row space-x-8 pt-10">
@@ -36,14 +36,14 @@ export default function HeroSection({}: Props) {
                 {content?.cta_button}
               </button>
             </Link>
-            <button className="font-semibold text-sky-400 transition hover:text-sky-700 focus:outline-none">
+            {/* <button className="font-semibold text-sky-400 transition hover:text-sky-700 focus:outline-none">
               See more
-            </button>
+            </button> */}
           </div>
         </div>
         {/* Images */}
         <div className="relative">
-          <div className="absolute left-16 top-1/3 z-10 -mt-2 h-48 w-96">
+          <div className="absolute left-11 top-1/4 z-10 -mt-2 h-64 w-96">
             <Image
               className=" object-contain "
               src={content?.images?.a}
@@ -52,7 +52,7 @@ export default function HeroSection({}: Props) {
               alt="Doctor a"
             />
           </div>
-          <div className="absolute right-4 top-4 z-10 h-[204px] w-[204px]">
+          <div className="absolute right-1 top-1 z-10 h-[204px] w-[310px]">
             <Image
               className="object-cover"
               src={content?.images?.b}
@@ -61,7 +61,7 @@ export default function HeroSection({}: Props) {
               alt="Doctor b"
             />
           </div>
-          <div className="absolute right-4 bottom-4 z-10 h-[204px] w-[204px]">
+          <div className="absolute right-1 bottom-1 z-10 h-[175px] w-[310px]">
             <Image
               className="object-cover"
               src={content?.images?.c}
