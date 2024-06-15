@@ -11,13 +11,14 @@ export default function Home() {
       <Header />
 
       {/* Main */}
-      <main className="flex flex-col space-y-10">
+      <main className="flex flex-col space-y-20">
         {/* Hero Section  */}
         <HeroSection />
 
         {/* Features */}
         <Features />
       </main>
+
       <Footer />
     </div>
   );
