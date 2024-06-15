@@ -1,4 +1,4 @@
-# Title: Advanced Tuberculosis(TB) Detection From Chest X-ray Using Deep Learning
+# Title: Advanced AI Tuberculosis Detection Analysis
 
 ## Domain: Medical Imaging
 
