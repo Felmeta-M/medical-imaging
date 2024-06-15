@@ -1,3 +1,4 @@
+import { title } from "process";
 import React from "react";
 
 type Props = {};
@@ -37,7 +38,8 @@ export default function Features({}: Props) {
           />
         </svg>
       ),
-      title: "Consulting",
+      // title: "Consulting",
+      title: "Join us and save lives together",
       description: "",
     },
     {
