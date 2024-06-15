@@ -34,20 +34,20 @@ export default function Header({}: Props) {
         link: "/",
         active: true,
       },
-      {
-        title: "Our Service",
-        link: "/",
-      },
+      // {
+        // title: "Our Service",
+        // link: "/",
+      // },
       {
         title: "About Us",
         link: "/",
       },
-      {
-        title: "Health News",
-        link: "/",
-      },
+      // {
+      //   title: "Health News",
+      //   link: "/",
+      // },
     ],
-    button: "Login",
+    // button: "Login",
   };
   return (
     <header className="flex w-full py-6 border-b">
@@ -76,9 +76,9 @@ export default function Header({}: Props) {
         </ul>
 
         {/* Buttons */}
-        <button className="rounded-md bg-sky-500 px-6 py-3 font-semibold text-white transition hover:bg-sky-700/90 focus:outline-none">
+        {/* <button className="rounded-md bg-sky-500 px-6 py-3 font-semibold text-white transition hover:bg-sky-700/90 focus:outline-none">
           {content?.button}
-        </button>
+        </button> */}
       </nav>
     </header>
   );
