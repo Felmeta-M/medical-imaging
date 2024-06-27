@@ -28,6 +28,15 @@ model = load_model_custom(MODEL_PATH)
 # Classes
 class_names = ['normal', 'tuberculosis']
 
+def is_chest_xray(image_bytes):
+    # Example: Check if the image is grayscale
+    img = Image.open(io.BytesIO(image_bytes)).convert('L')  # Convert to grayscale
+    img_array = np.array(img)
+    if img_array.mean() > 10:  # Arbitrary threshold to differentiate between mostly white images
+        return True
+    else:
+        return False
+    
 def transform_image(image_bytes):
     img = Image.open(io.BytesIO(image_bytes)).convert('RGB')
     img = img.resize((227, 227))
