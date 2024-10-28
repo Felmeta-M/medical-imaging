@@ -33,16 +33,12 @@ NIAID TB dataset: NIAID TB portal program dataset [3], which contains about 3000
 
 RSNA CXR dataset: RSNA pneumonia detection challenge dataset [4], which is comprised of about 30,000 chest X-ray images, where 10,000 images are normal and others are abnormal and lung opacity images.
 
-Objective
-
-Researchers can use this database to produce useful and impactful scholarly work on TB, which can help in tackling this issue.
-
 ### Run Locally
 
 Step 1. Clone the repository
 
 ```bash
-clone the repository
+git clone https://github.com/Felmeta-M/medical-imaging.git
 ```
 
 Step 2. Go to the project directory
